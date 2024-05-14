@@ -12,6 +12,6 @@ Reference - Daniel Sabinasz's deep learning by cognitive
 
 Wishing a good success :)
 
-Copyright (c) 2023, 2024 Radhamadhab Dalai, Odisha, India
+Copyright (c) 2020 -2024 Radhamadhab Dalai, Odisha, India
 Author's email address : dalai115@gmail.com
 
