@@ -10,6 +10,10 @@ This is for interested students, engineers, teachers, scientists, authors who ca
  
 Reference - Daniel Sabinasz's deep learning by cognitive
 
+
+2. Pytorch from scratch - This is a small clone of PyTorch framework with Autograd  implementations
+Refer the document file for more.
+
 Wishing a good success :)
 
 Copyright (c) 2020 -2024 Radhamadhab Dalai, Odisha, India
