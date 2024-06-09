@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_logging.dir/test_logging.cpp.o  -o test_logging  ../src/libcaffe.a 

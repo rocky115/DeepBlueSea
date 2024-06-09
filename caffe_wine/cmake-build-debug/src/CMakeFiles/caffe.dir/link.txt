@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcaffe.a  CMakeFiles/caffe.dir/base.cpp.o CMakeFiles/caffe.dir/logging.cpp.o
+/usr/bin/ranlib libcaffe.a

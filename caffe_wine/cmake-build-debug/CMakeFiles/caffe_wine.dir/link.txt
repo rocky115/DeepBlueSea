@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/caffe_wine.dir/main.cpp.o  -o caffe_wine 
