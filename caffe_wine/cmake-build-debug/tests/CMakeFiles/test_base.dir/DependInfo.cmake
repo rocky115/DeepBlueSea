@@ -4,13 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/testBlob.cpp" "/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests/CMakeFiles/test_base.dir/testBlob.cpp.o"
   "/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_base.cpp" "/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests/CMakeFiles/test_base.dir/test_base.cpp.o"
+  "/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_logging.cpp" "/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests/CMakeFiles/test_base.dir/test_logging.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   "../include"
+  "../tests/../include"
+  "../src/../include"
   )
 
 # Targets to which this target links.

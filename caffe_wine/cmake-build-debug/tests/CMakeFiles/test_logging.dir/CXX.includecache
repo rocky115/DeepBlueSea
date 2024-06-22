@@ -6,25 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../include/caffe/logging.hpp
-iostream
--
-sstream
--
-stdexcept
--
-
-/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/simple_test.hpp
-iostream
--
-string
--
-
-/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_logging.cpp
-caffe/logging.hpp
-/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/caffe/logging.hpp
-simple_test.hpp
-/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/simple_test.hpp
-sstream
--
-

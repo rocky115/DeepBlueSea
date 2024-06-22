@@ -111,19 +111,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/caffe.dir/rule:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/caffe.dir/rule
-.PHONY : src/CMakeFiles/caffe.dir/rule
+src/CMakeFiles/base.dir/rule:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/base.dir/rule
+.PHONY : src/CMakeFiles/base.dir/rule
 
 # Convenience name for target.
-caffe: src/CMakeFiles/caffe.dir/rule
+base: src/CMakeFiles/base.dir/rule
 
-.PHONY : caffe
+.PHONY : base
 
 # fast build rule for target.
-caffe/fast:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/build
-.PHONY : caffe/fast
+base/fast:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/build
+.PHONY : base/fast
+
+# Convenience name for target.
+src/CMakeFiles/blob.dir/rule:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/blob.dir/rule
+.PHONY : src/CMakeFiles/blob.dir/rule
+
+# Convenience name for target.
+blob: src/CMakeFiles/blob.dir/rule
+
+.PHONY : blob
+
+# fast build rule for target.
+blob/fast:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/build
+.PHONY : blob/fast
 
 base.o: base.cpp.o
 
@@ -131,7 +146,7 @@ base.o: base.cpp.o
 
 # target to build an object file
 base.cpp.o:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/base.cpp.o
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/base.cpp.o
 .PHONY : base.cpp.o
 
 base.i: base.cpp.i
@@ -140,7 +155,7 @@ base.i: base.cpp.i
 
 # target to preprocess a source file
 base.cpp.i:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/base.cpp.i
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/base.cpp.i
 .PHONY : base.cpp.i
 
 base.s: base.cpp.s
@@ -149,35 +164,35 @@ base.s: base.cpp.s
 
 # target to generate assembly for a file
 base.cpp.s:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/base.cpp.s
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/base.cpp.s
 .PHONY : base.cpp.s
 
-logging.o: logging.cpp.o
+blob.o: blob.cpp.o
 
-.PHONY : logging.o
+.PHONY : blob.o
 
 # target to build an object file
-logging.cpp.o:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/logging.cpp.o
-.PHONY : logging.cpp.o
+blob.cpp.o:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/blob.cpp.o
+.PHONY : blob.cpp.o
 
-logging.i: logging.cpp.i
+blob.i: blob.cpp.i
 
-.PHONY : logging.i
+.PHONY : blob.i
 
 # target to preprocess a source file
-logging.cpp.i:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/logging.cpp.i
-.PHONY : logging.cpp.i
+blob.cpp.i:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/blob.cpp.i
+.PHONY : blob.cpp.i
 
-logging.s: logging.cpp.s
+blob.s: blob.cpp.s
 
-.PHONY : logging.s
+.PHONY : blob.s
 
 # target to generate assembly for a file
-logging.cpp.s:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/logging.cpp.s
-.PHONY : logging.cpp.s
+blob.cpp.s:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/blob.cpp.s
+.PHONY : blob.cpp.s
 
 # Help Target
 help:
@@ -186,14 +201,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... caffe"
 	@echo "... edit_cache"
+	@echo "... base"
+	@echo "... blob"
 	@echo "... base.o"
 	@echo "... base.i"
 	@echo "... base.s"
-	@echo "... logging.o"
-	@echo "... logging.i"
-	@echo "... logging.s"
+	@echo "... blob.o"
+	@echo "... blob.i"
+	@echo "... blob.s"
 .PHONY : help
 
 

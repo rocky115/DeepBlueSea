@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/test_blob.dir/testBlob.cpp.o  -o test_blob -Wl,-rpath,/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src ../src/libblob.so ../src/libbase.so 

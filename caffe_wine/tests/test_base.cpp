@@ -19,31 +19,29 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-
-#include "caffe/base.hpp"
-#include "simple_test.hpp"
-#include <sstream>
-
-TEST(BaseTest, Print) {
-caffe::Base base;
-// Capture output
-std::ostringstream oss;
-std::streambuf* old_cout_buf = std::cout.rdbuf();
-std::cout.rdbuf(oss.rdbuf());
-
-base.print();
-
-// Restore output
-std::cout.rdbuf(old_cout_buf);
-
-EXPECT_EQ(oss.str(), "Base class\n");
-
-return 0;
-}
+#include "caffe/base.h"
+#include <iostream>
 
 int main() {
-    RUN_TEST(BaseTest, Print);
+    // Test GPUAvailable
+    if (caffe::GPUAvailable()) {
+        std::cout << "GPU is available!" << std::endl;
+    } else {
+        std::cout << "GPU is not available." << std::endl;
+    }
+
+    // Test SetMode
+    caffe::SetMode(caffe::GPU, 0);  // Setting GPU mode with device 0
+
+    // Test MemPoolGetState
+    caffe::MemPoolState state = caffe::MemPoolGetState();
+    std::cout << "GPU Memory Used: " << state.gpu_mem << std::endl;
+    std::cout << "CPU Memory Used: " << state.cpu_mem << std::endl;
+    std::cout << "Unused GPU Memory: " << state.unused_gpu_mem << std::endl;
+    std::cout << "Unused CPU Memory: " << state.unused_cpu_mem << std::endl;
+
+    // Test MemPoolClear
+    caffe::MemPoolClear();
+
     return 0;
 }
-

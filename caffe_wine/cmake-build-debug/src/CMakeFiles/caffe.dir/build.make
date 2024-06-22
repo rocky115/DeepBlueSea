@@ -70,9 +70,22 @@ src/CMakeFiles/caffe.dir/base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caffe.dir/base.cpp.s"
 	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/src/base.cpp -o CMakeFiles/caffe.dir/base.cpp.s
 
+src/CMakeFiles/caffe.dir/blob.cpp.o: src/CMakeFiles/caffe.dir/flags.make
+src/CMakeFiles/caffe.dir/blob.cpp.o: ../src/blob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/caffe.dir/blob.cpp.o"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/caffe.dir/blob.cpp.o -c /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/src/blob.cpp
+
+src/CMakeFiles/caffe.dir/blob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/caffe.dir/blob.cpp.i"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/src/blob.cpp > CMakeFiles/caffe.dir/blob.cpp.i
+
+src/CMakeFiles/caffe.dir/blob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/caffe.dir/blob.cpp.s"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/src/blob.cpp -o CMakeFiles/caffe.dir/blob.cpp.s
+
 src/CMakeFiles/caffe.dir/logging.cpp.o: src/CMakeFiles/caffe.dir/flags.make
 src/CMakeFiles/caffe.dir/logging.cpp.o: ../src/logging.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/caffe.dir/logging.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/caffe.dir/logging.cpp.o"
 	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/caffe.dir/logging.cpp.o -c /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/src/logging.cpp
 
 src/CMakeFiles/caffe.dir/logging.cpp.i: cmake_force
@@ -86,16 +99,18 @@ src/CMakeFiles/caffe.dir/logging.cpp.s: cmake_force
 # Object files for target caffe
 caffe_OBJECTS = \
 "CMakeFiles/caffe.dir/base.cpp.o" \
+"CMakeFiles/caffe.dir/blob.cpp.o" \
 "CMakeFiles/caffe.dir/logging.cpp.o"
 
 # External object files for target caffe
 caffe_EXTERNAL_OBJECTS =
 
 src/libcaffe.a: src/CMakeFiles/caffe.dir/base.cpp.o
+src/libcaffe.a: src/CMakeFiles/caffe.dir/blob.cpp.o
 src/libcaffe.a: src/CMakeFiles/caffe.dir/logging.cpp.o
 src/libcaffe.a: src/CMakeFiles/caffe.dir/build.make
 src/libcaffe.a: src/CMakeFiles/caffe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcaffe.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcaffe.a"
 	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/caffe.dir/cmake_clean_target.cmake
 	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/caffe.dir/link.txt --verbose=$(VERBOSE)
 

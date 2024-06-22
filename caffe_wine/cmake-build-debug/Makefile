@@ -111,43 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named caffe
+# Target rules for targets named base
 
 # Build rule for target.
-caffe: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 caffe
-.PHONY : caffe
+base: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 base
+.PHONY : base
 
 # fast build rule for target.
-caffe/fast:
-	$(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/build
-.PHONY : caffe/fast
+base/fast:
+	$(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/build
+.PHONY : base/fast
 
 #=============================================================================
-# Target rules for targets named test_base
+# Target rules for targets named blob
 
 # Build rule for target.
-test_base: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_base
-.PHONY : test_base
+blob: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 blob
+.PHONY : blob
 
 # fast build rule for target.
-test_base/fast:
-	$(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/build
-.PHONY : test_base/fast
+blob/fast:
+	$(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/build
+.PHONY : blob/fast
 
 #=============================================================================
-# Target rules for targets named test_logging
+# Target rules for targets named test_blob
 
 # Build rule for target.
-test_logging: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_logging
-.PHONY : test_logging
+test_blob: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_blob
+.PHONY : test_blob
 
 # fast build rule for target.
-test_logging/fast:
-	$(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/build
-.PHONY : test_logging/fast
+test_blob/fast:
+	$(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/build
+.PHONY : test_blob/fast
 
 # Help Target
 help:
@@ -157,9 +157,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... caffe"
-	@echo "... test_base"
-	@echo "... test_logging"
+	@echo "... base"
+	@echo "... blob"
+	@echo "... test_blob"
 .PHONY : help
 
 

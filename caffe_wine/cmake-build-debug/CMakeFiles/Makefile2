@@ -68,12 +68,14 @@ CMAKE_BINARY_DIR = /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caff
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/caffe.dir/all
+src/all: src/CMakeFiles/base.dir/all
+src/all: src/CMakeFiles/blob.dir/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/caffe.dir/clean
+src/clean: src/CMakeFiles/base.dir/clean
+src/clean: src/CMakeFiles/blob.dir/clean
 
 .PHONY : src/clean
 
@@ -83,39 +85,76 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/caffe.dir
+# Target rules for target src/CMakeFiles/base.dir
 
 # All Build rule for target.
-src/CMakeFiles/caffe.dir/all:
-	$(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/depend
-	$(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target caffe"
-.PHONY : src/CMakeFiles/caffe.dir/all
+src/CMakeFiles/base.dir/all:
+	$(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/depend
+	$(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target base"
+.PHONY : src/CMakeFiles/base.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/caffe.dir/all
+all: src/CMakeFiles/base.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/caffe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/caffe.dir/all
+src/CMakeFiles/base.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 0
-.PHONY : src/CMakeFiles/caffe.dir/rule
+.PHONY : src/CMakeFiles/base.dir/rule
 
 # Convenience name for target.
-caffe: src/CMakeFiles/caffe.dir/rule
+base: src/CMakeFiles/base.dir/rule
 
-.PHONY : caffe
-
-# clean rule for target.
-src/CMakeFiles/caffe.dir/clean:
-	$(MAKE) -f src/CMakeFiles/caffe.dir/build.make src/CMakeFiles/caffe.dir/clean
-.PHONY : src/CMakeFiles/caffe.dir/clean
+.PHONY : base
 
 # clean rule for target.
-clean: src/CMakeFiles/caffe.dir/clean
+src/CMakeFiles/base.dir/clean:
+	$(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/clean
+.PHONY : src/CMakeFiles/base.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/base.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/blob.dir
+
+# All Build rule for target.
+src/CMakeFiles/blob.dir/all: src/CMakeFiles/base.dir/all
+	$(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/depend
+	$(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target blob"
+.PHONY : src/CMakeFiles/blob.dir/all
+
+# Include target in all.
+all: src/CMakeFiles/blob.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/blob.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/blob.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 0
+.PHONY : src/CMakeFiles/blob.dir/rule
+
+# Convenience name for target.
+blob: src/CMakeFiles/blob.dir/rule
+
+.PHONY : blob
+
+# clean rule for target.
+src/CMakeFiles/blob.dir/clean:
+	$(MAKE) -f src/CMakeFiles/blob.dir/build.make src/CMakeFiles/blob.dir/clean
+.PHONY : src/CMakeFiles/blob.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/blob.dir/clean
 
 .PHONY : clean
 
@@ -123,14 +162,12 @@ clean: src/CMakeFiles/caffe.dir/clean
 # Directory level rules for directory tests
 
 # Convenience name for "all" pass in the directory.
-tests/all: tests/CMakeFiles/test_base.dir/all
-tests/all: tests/CMakeFiles/test_logging.dir/all
+tests/all: tests/CMakeFiles/test_blob.dir/all
 
 .PHONY : tests/all
 
 # Convenience name for "clean" pass in the directory.
-tests/clean: tests/CMakeFiles/test_base.dir/clean
-tests/clean: tests/CMakeFiles/test_logging.dir/clean
+tests/clean: tests/CMakeFiles/test_blob.dir/clean
 
 .PHONY : tests/clean
 
@@ -140,96 +177,42 @@ tests/preinstall:
 .PHONY : tests/preinstall
 
 #=============================================================================
-# Target rules for target tests/CMakeFiles/test_base.dir
+# Target rules for target tests/CMakeFiles/test_blob.dir
 
 # All Build rule for target.
-tests/CMakeFiles/test_base.dir/all: src/CMakeFiles/caffe.dir/all
-	$(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/depend
-	$(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=4,5 "Built target test_base"
-.PHONY : tests/CMakeFiles/test_base.dir/all
+tests/CMakeFiles/test_blob.dir/all: src/CMakeFiles/base.dir/all
+tests/CMakeFiles/test_blob.dir/all: src/CMakeFiles/blob.dir/all
+	$(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target test_blob"
+.PHONY : tests/CMakeFiles/test_blob.dir/all
 
 # Include target in all.
-all: tests/CMakeFiles/test_base.dir/all
+all: tests/CMakeFiles/test_blob.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-tests/CMakeFiles/test_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_base.dir/all
+tests/CMakeFiles/test_blob.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_blob.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_base.dir/rule
+.PHONY : tests/CMakeFiles/test_blob.dir/rule
 
 # Convenience name for target.
-test_base: tests/CMakeFiles/test_base.dir/rule
+test_blob: tests/CMakeFiles/test_blob.dir/rule
 
-.PHONY : test_base
-
-# clean rule for target.
-tests/CMakeFiles/test_base.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/clean
-.PHONY : tests/CMakeFiles/test_base.dir/clean
+.PHONY : test_blob
 
 # clean rule for target.
-clean: tests/CMakeFiles/test_base.dir/clean
+tests/CMakeFiles/test_blob.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/clean
+.PHONY : tests/CMakeFiles/test_blob.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_blob.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target tests/CMakeFiles/test_logging.dir
-
-# All Build rule for target.
-tests/CMakeFiles/test_logging.dir/all: src/CMakeFiles/caffe.dir/all
-	$(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/depend
-	$(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target test_logging"
-.PHONY : tests/CMakeFiles/test_logging.dir/all
-
-# Include target in all.
-all: tests/CMakeFiles/test_logging.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-tests/CMakeFiles/test_logging.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_logging.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles 0
-.PHONY : tests/CMakeFiles/test_logging.dir/rule
-
-# Convenience name for target.
-test_logging: tests/CMakeFiles/test_logging.dir/rule
-
-.PHONY : test_logging
-
-# clean rule for target.
-tests/CMakeFiles/test_logging.dir/clean:
-	$(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/clean
-.PHONY : tests/CMakeFiles/test_logging.dir/clean
-
-# clean rule for target.
-clean: tests/CMakeFiles/test_logging.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory third_party/Caffe
-
-# Convenience name for "all" pass in the directory.
-third_party/Caffe/all:
-
-.PHONY : third_party/Caffe/all
-
-# Convenience name for "clean" pass in the directory.
-third_party/Caffe/clean:
-
-.PHONY : third_party/Caffe/clean
-
-# Convenience name for "preinstall" pass in the directory.
-third_party/Caffe/preinstall:
-
-.PHONY : third_party/Caffe/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

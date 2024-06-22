@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/caffe.dir/base.cpp.o"
+  "CMakeFiles/caffe.dir/blob.cpp.o"
   "CMakeFiles/caffe.dir/logging.cpp.o"
   "libcaffe.pdb"
   "libcaffe.a"

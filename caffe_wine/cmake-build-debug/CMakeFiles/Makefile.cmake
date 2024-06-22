@@ -13,7 +13,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
   "../tests/CMakeLists.txt"
-  "../third_party/Caffe/CMakeLists.txt"
   "/home/radha/paperworks/SW/clion-2018.3.3/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCInformation.cmake"
   "/home/radha/paperworks/SW/clion-2018.3.3/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXInformation.cmake"
   "/home/radha/paperworks/SW/clion-2018.3.3/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCommonLanguageInclude.cmake"
@@ -47,12 +46,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "third_party/Caffe/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/caffe.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_base.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_logging.dir/DependInfo.cmake"
+  "src/CMakeFiles/base.dir/DependInfo.cmake"
+  "src/CMakeFiles/blob.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_blob.dir/DependInfo.cmake"
   )

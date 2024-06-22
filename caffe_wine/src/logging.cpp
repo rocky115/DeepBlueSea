@@ -20,4 +20,4 @@
  * THE SOFTWARE.
  */
 
-#include "caffe/logging.hpp"
+#include "caffe/logging.h"

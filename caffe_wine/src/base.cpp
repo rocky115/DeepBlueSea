@@ -20,4 +20,31 @@
  * THE SOFTWARE.
  */
 
-#include "caffe/base.hpp"
+#include "caffe/base.h"
+
+namespace caffe {
+
+    bool GPUAvailable() {
+        // Implementation for GPUAvailable
+        return false;  // Example implementation
+    }
+
+    void SetMode(DeviceMode mode, int device) {
+        // Implementation for SetMode
+    }
+
+    MemPoolState MemPoolGetState() {
+        // Implementation for MemPoolGetState
+        MemPoolState state;
+        state.gpu_mem = 0;
+        state.cpu_mem = 0;
+        state.unused_gpu_mem = 0;
+        state.unused_cpu_mem = 0;
+        return state;
+    }
+
+    void MemPoolClear() {
+        // Implementation for MemPoolClear
+    }
+
+}

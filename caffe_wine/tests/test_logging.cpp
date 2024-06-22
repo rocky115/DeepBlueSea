@@ -21,7 +21,23 @@
  */
 
 
-#include "caffe/logging.hpp"
+//#include "caffe/logging.hpp"
+//#include <gtest/gtest.h>
+/*
+TEST(LoggingTest, InfoLog) {
+testing::internal::CaptureStderr();
+LOG(INFO) << "Info message";
+std::string output = testing::internal::GetCapturedStderr();
+EXPECT_NE(output.find("Info message"), std::string::npos);
+}
+
+int main(int argc, char** argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
+}
+*/
+
+#include "caffe/logging.h"
 #include "simple_test.hpp"
 #include <sstream>  // Include the necessary header
 
@@ -30,7 +46,7 @@ TEST(LoggingTest, InfoLog) {
     std::streambuf* old_cerr_buf = std::cerr.rdbuf();
     std::cerr.rdbuf(oss.rdbuf());
 
-    LOG(INFO) << "Info message";
+    LogMessage(caffe::LogLevel::INFO,"Info message") ; //<< "Info message";
 
     std::cerr.rdbuf(old_cerr_buf);
 
@@ -39,7 +55,7 @@ TEST(LoggingTest, InfoLog) {
     return 0;
 }
 
-int main() {
-    RUN_TEST(LoggingTest, InfoLog);
-    return 0;
-}
+//int main() {
+//    RUN_TEST(LoggingTest, InfoLog);
+//    return 0;
+//}

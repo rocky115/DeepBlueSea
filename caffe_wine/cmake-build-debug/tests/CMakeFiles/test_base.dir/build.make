@@ -57,9 +57,22 @@ include tests/CMakeFiles/test_base.dir/progress.make
 # Include the compile flags for this target's objects.
 include tests/CMakeFiles/test_base.dir/flags.make
 
+tests/CMakeFiles/test_base.dir/testBlob.cpp.o: tests/CMakeFiles/test_base.dir/flags.make
+tests/CMakeFiles/test_base.dir/testBlob.cpp.o: ../tests/testBlob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/test_base.dir/testBlob.cpp.o"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_base.dir/testBlob.cpp.o -c /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/testBlob.cpp
+
+tests/CMakeFiles/test_base.dir/testBlob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_base.dir/testBlob.cpp.i"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/testBlob.cpp > CMakeFiles/test_base.dir/testBlob.cpp.i
+
+tests/CMakeFiles/test_base.dir/testBlob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_base.dir/testBlob.cpp.s"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/testBlob.cpp -o CMakeFiles/test_base.dir/testBlob.cpp.s
+
 tests/CMakeFiles/test_base.dir/test_base.cpp.o: tests/CMakeFiles/test_base.dir/flags.make
 tests/CMakeFiles/test_base.dir/test_base.cpp.o: ../tests/test_base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/test_base.dir/test_base.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/test_base.dir/test_base.cpp.o"
 	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_base.dir/test_base.cpp.o -c /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_base.cpp
 
 tests/CMakeFiles/test_base.dir/test_base.cpp.i: cmake_force
@@ -70,18 +83,35 @@ tests/CMakeFiles/test_base.dir/test_base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_base.dir/test_base.cpp.s"
 	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_base.cpp -o CMakeFiles/test_base.dir/test_base.cpp.s
 
+tests/CMakeFiles/test_base.dir/test_logging.cpp.o: tests/CMakeFiles/test_base.dir/flags.make
+tests/CMakeFiles/test_base.dir/test_logging.cpp.o: ../tests/test_logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/test_base.dir/test_logging.cpp.o"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_base.dir/test_logging.cpp.o -c /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_logging.cpp
+
+tests/CMakeFiles/test_base.dir/test_logging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_base.dir/test_logging.cpp.i"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_logging.cpp > CMakeFiles/test_base.dir/test_logging.cpp.i
+
+tests/CMakeFiles/test_base.dir/test_logging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_base.dir/test_logging.cpp.s"
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/tests/test_logging.cpp -o CMakeFiles/test_base.dir/test_logging.cpp.s
+
 # Object files for target test_base
 test_base_OBJECTS = \
-"CMakeFiles/test_base.dir/test_base.cpp.o"
+"CMakeFiles/test_base.dir/testBlob.cpp.o" \
+"CMakeFiles/test_base.dir/test_base.cpp.o" \
+"CMakeFiles/test_base.dir/test_logging.cpp.o"
 
 # External object files for target test_base
 test_base_EXTERNAL_OBJECTS =
 
+tests/test_base: tests/CMakeFiles/test_base.dir/testBlob.cpp.o
 tests/test_base: tests/CMakeFiles/test_base.dir/test_base.cpp.o
+tests/test_base: tests/CMakeFiles/test_base.dir/test_logging.cpp.o
 tests/test_base: tests/CMakeFiles/test_base.dir/build.make
 tests/test_base: src/libcaffe.a
 tests/test_base: tests/CMakeFiles/test_base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_base"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_base"
 	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_base.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

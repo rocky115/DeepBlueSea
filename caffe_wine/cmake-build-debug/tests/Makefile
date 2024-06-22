@@ -111,88 +111,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/test_base.dir/rule:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_base.dir/rule
-.PHONY : tests/CMakeFiles/test_base.dir/rule
+tests/CMakeFiles/test_blob.dir/rule:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_blob.dir/rule
+.PHONY : tests/CMakeFiles/test_blob.dir/rule
 
 # Convenience name for target.
-test_base: tests/CMakeFiles/test_base.dir/rule
+test_blob: tests/CMakeFiles/test_blob.dir/rule
 
-.PHONY : test_base
+.PHONY : test_blob
 
 # fast build rule for target.
-test_base/fast:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/build
-.PHONY : test_base/fast
+test_blob/fast:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/build
+.PHONY : test_blob/fast
 
-# Convenience name for target.
-tests/CMakeFiles/test_logging.dir/rule:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_logging.dir/rule
-.PHONY : tests/CMakeFiles/test_logging.dir/rule
+testBlob.o: testBlob.cpp.o
 
-# Convenience name for target.
-test_logging: tests/CMakeFiles/test_logging.dir/rule
-
-.PHONY : test_logging
-
-# fast build rule for target.
-test_logging/fast:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/build
-.PHONY : test_logging/fast
-
-test_base.o: test_base.cpp.o
-
-.PHONY : test_base.o
+.PHONY : testBlob.o
 
 # target to build an object file
-test_base.cpp.o:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/test_base.cpp.o
-.PHONY : test_base.cpp.o
+testBlob.cpp.o:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/testBlob.cpp.o
+.PHONY : testBlob.cpp.o
 
-test_base.i: test_base.cpp.i
+testBlob.i: testBlob.cpp.i
 
-.PHONY : test_base.i
-
-# target to preprocess a source file
-test_base.cpp.i:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/test_base.cpp.i
-.PHONY : test_base.cpp.i
-
-test_base.s: test_base.cpp.s
-
-.PHONY : test_base.s
-
-# target to generate assembly for a file
-test_base.cpp.s:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_base.dir/build.make tests/CMakeFiles/test_base.dir/test_base.cpp.s
-.PHONY : test_base.cpp.s
-
-test_logging.o: test_logging.cpp.o
-
-.PHONY : test_logging.o
-
-# target to build an object file
-test_logging.cpp.o:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/test_logging.cpp.o
-.PHONY : test_logging.cpp.o
-
-test_logging.i: test_logging.cpp.i
-
-.PHONY : test_logging.i
+.PHONY : testBlob.i
 
 # target to preprocess a source file
-test_logging.cpp.i:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/test_logging.cpp.i
-.PHONY : test_logging.cpp.i
+testBlob.cpp.i:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/testBlob.cpp.i
+.PHONY : testBlob.cpp.i
 
-test_logging.s: test_logging.cpp.s
+testBlob.s: testBlob.cpp.s
 
-.PHONY : test_logging.s
+.PHONY : testBlob.s
 
 # target to generate assembly for a file
-test_logging.cpp.s:
-	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_logging.dir/build.make tests/CMakeFiles/test_logging.dir/test_logging.cpp.s
-.PHONY : test_logging.cpp.s
+testBlob.cpp.s:
+	cd /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug && $(MAKE) -f tests/CMakeFiles/test_blob.dir/build.make tests/CMakeFiles/test_blob.dir/testBlob.cpp.s
+.PHONY : testBlob.cpp.s
 
 # Help Target
 help:
@@ -201,15 +159,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_blob"
 	@echo "... edit_cache"
-	@echo "... test_base"
-	@echo "... test_logging"
-	@echo "... test_base.o"
-	@echo "... test_base.i"
-	@echo "... test_base.s"
-	@echo "... test_logging.o"
-	@echo "... test_logging.i"
-	@echo "... test_logging.s"
+	@echo "... testBlob.o"
+	@echo "... testBlob.i"
+	@echo "... testBlob.s"
 .PHONY : help
 
 

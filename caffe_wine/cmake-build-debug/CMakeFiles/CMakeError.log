@@ -1,0 +1,59 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf4b5/fast"
+make[1]: Entering directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_cf4b5.dir/build.make CMakeFiles/cmTC_cf4b5.dir/build
+make[2]: Entering directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf4b5.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cf4b5.dir/CheckSymbolExists.c.o   -c /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cf4b5
+/home/radha/paperworks/SW/clion-2018.3.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf4b5.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_cf4b5.dir/CheckSymbolExists.c.o  -o cmTC_cf4b5 
+CMakeFiles/cmTC_cf4b5.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_cf4b5.dir/build.make:86: recipe for target 'cmTC_cf4b5' failed
+make[2]: *** [cmTC_cf4b5] Error 1
+make[2]: Leaving directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_cf4b5/fast' failed
+make[1]: *** [cmTC_cf4b5/fast] Error 2
+make[1]: Leaving directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+File /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84d33/fast"
+make[1]: Entering directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_84d33.dir/build.make CMakeFiles/cmTC_84d33.dir/build
+make[2]: Entering directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84d33.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_84d33.dir/CheckFunctionExists.c.o   -c /home/radha/paperworks/SW/clion-2018.3.3/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_84d33
+/home/radha/paperworks/SW/clion-2018.3.3/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84d33.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_84d33.dir/CheckFunctionExists.c.o  -o cmTC_84d33 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84d33.dir/build.make:86: recipe for target 'cmTC_84d33' failed
+make[2]: *** [cmTC_84d33] Error 1
+make[2]: Leaving directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_84d33/fast' failed
+make[1]: *** [cmTC_84d33/fast] Error 2
+make[1]: Leaving directory '/home/radha/Works-AI-CV/khaali_patho/igf_impl/frameworks/caffe2/2/caffe_wine/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
